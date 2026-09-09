@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+</head>
+
+<body>
+    <h2>Student Names</h2>
+    <ul id="studentList"></ul>
+
+    <script>
+        const students = [
+            {
+                id: 1,
+                name: "Tanvi",
+                course: "Javascript",
+                marks: 85
+            },
+            {
+                id: 2,
+                name: "Khushi",
+                course: "Java",
+                marks: 90
+            },
+            {
+                id: 3,
+                name: "Riddhi",
+                course: "Discrete",
+                marks: 95
+            }
+        ];
+
+        // Store array in localStorage
+        localStorage.setItem("students", JSON.stringify(students));
+
+        // Get data from localStorage
+        const data = localStorage.getItem("students");
+
+        // Convert JSON string back to JavaScript array
+        const studentsData = JSON.parse(data);
+
+        const studentList = document.getElementById("studentList");
+
+        // Display student names
+        studentsData.forEach((student) => {
+            const li = document.createElement("li");
+            li.textContent = student.name;
+            studentList.appendChild(li);
+        });
+    </script>
+</body>
+</html>

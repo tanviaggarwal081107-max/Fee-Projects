@@ -1,0 +1,14 @@
+Q1 What do you know about functions?
+Ans:-
+1.Fuction is a reusable code of block
+2.It is used to perform a specific task
+3.It reduces redundency.
+Q2 What is layout?
+Ans:-
+1.It is defined as the pre-planed structure of the website
+Q3 What do you know about flex layout?
+Ans:-
+Q4 What is the need of grid layout?
+Ans:-
+Q5 What is the use of GitHub?
+Ans:-

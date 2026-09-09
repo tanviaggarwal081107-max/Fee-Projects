@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Lists</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #F4F1EA;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 15vh;
+            background-color: #1F2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: #F4C95D;
+        }
+
+        main {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .list-box {
+            width: 300px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #1F2937;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            height: 15vh;
+            background-color: #1F2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            color: #F4C95D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="fcx">&#9812;</header>
+
+    <main>
+
+        <div class="list-box">
+            <h3>List 1</h3>
+
+            <ul id="u1">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+        </div>
+
+        <div class="list-box">
+            <h3>List 2</h3>
+
+            <ul id="u2">
+                <li>Four</li>
+                <li>Five</li>
+                <li>Six</li>
+            </ul>
+        </div>
+
+    </main>
+
+    <footer class="fcx">&#9814;</footer>
+
+    <script>
+
+        let ul = document.querySelectorAll("ul");
+
+        ul[0].style.cssText =
+            "background-color: #6B8E23; color: white;";
+
+        ul[1].style.cssText =
+            "background-color: #5F9EA0; color: white;";
+
+        let ul0 = ul[0].firstElementChild;
+
+        ul0.style.fontSize = "1.5rem";
+
+        ul0.nextElementSibling.style.color = "#FFD700";
+
+        let ul1 = ul[1].lastElementChild;
+
+        ul1.style.color = "#90EE90";
+
+    </script>
+
+</body>
+
+</html>

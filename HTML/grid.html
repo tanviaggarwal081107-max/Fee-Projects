@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sample</title>
+<style>
+body {
+  margin: 0;
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background: darkred;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 18px;
+}
+footer {
+  background: lightpink;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.main {
+  min-height: calc(100vh - 128px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 840px;
+  align-items: flex-start;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.box {
+  background: maroon;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.square {
+  width: 140px;
+  height: 140px;
+}
+.rectangle {
+  width: 240px;
+  height: 140px;
+}
+</style>
+</head>
+<body>
+<nav>Navbar</nav>
+<div class="main">
+  <div class="container">
+      <div class="column">
+        <div class="box square">Box 1</div>
+        <div class="box square">Box 2</div>
+        <div class="box square">Box 3</div>
+      </div>
+      <div class="column">
+        <div class="box rectangle">Box 4</div>
+        <div class="box rectangle">Box 5</div>
+        <div class="box rectangle">Box 6</div>
+      </div>
+    </div>
+</div>
+<footer>Footer</footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overlapping Circles</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#f2f2f2;
+}
+
+.container{
+    width:320px;
+    height:600px;
+    background:#0A57D5;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-top:40px;
+}
+
+.top-box{
+    width:240px;
+    height:100px;
+    background:white;
+    position:relative;
+    border-radius:5px;
+}
+
+/* Common circle style */
+.circle{
+    width:45px;
+    height:45px;
+    border:3px solid black;
+    border-radius:50%;
+    background:transparent;   /* Transparent so borders stay visible */
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* Left circle */
+.left{
+    left:60px;
+}
+
+/* Middle circle */
+.middle{
+    left:98px;
+}
+
+/* Right circle */
+.right{
+    left:136px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="top-box">
+        <div class="circle left"></div>
+        <div class="circle middle"></div>
+        <div class="circle right"></div>
+    </div>
+
+</div>
+
+</body>
+</html>

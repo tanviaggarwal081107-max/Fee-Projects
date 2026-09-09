@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Footer</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+}
+
+/* Navbar Box */
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color:#C2185B;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family: 'Poppins',sans-serif; */
+}
+.container{
+    display:flex;
+    height:500px;
+
+}
+.left{
+    background-color: bisque;
+    width: 50%;
+    height:600px;
+    line-height: 80px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.right{
+    background-color: brown;
+    width: 50%;
+    height:600px;
+    line-height: 80px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+/* Footer Box */
+.footer{
+    width: 100%;
+    height: 80px;
+    background-color:  #C2185B;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 0;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <i>NavBar</i>
+    </div>
+
+
+    <div class="container">
+        <div class="left">Left Section</div>
+        <div class="right">Right Section</div>
+    </div>
+    <div class="footer">
+        <i>Footer</i>
+    </div>
+
+
+</body>
+</html>

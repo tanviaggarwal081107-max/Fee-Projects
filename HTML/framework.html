@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusX Login</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1519608487953-e999c86e7455");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.login{
+    width:400px;
+    padding:40px;
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+   box-shadow:
+
+0 0 20px cyan,
+
+0 0 40px rgba(0,255,255,.4),
+
+0 20px 60px rgba(0,0,0,.5);
+
+    text-align:center;
+
+    transition:.4s;
+}
+
+.login:hover{
+    transform:translateY(-6px);
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.5),
+    0 0 35px cyan;
+}
+
+.login h1{
+color:#00ffff;
+margin-bottom:10px;
+}
+
+.login p{
+color:white;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:40px;
+
+background:linear-gradient(90deg,#00e5ff,#4f46e5);
+
+font-size:17px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+color:white;
+
+box-shadow:
+
+0 0 20px cyan;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+
+0 0 20px cyan,
+
+0 0 40px #4f46e5;
+
+}
+
+.links{
+margin-top:15px;
+font-size:14px;
+color:white;
+}
+
+.links a{
+color:#00ffff;
+text-decoration:none;
+}
+/* Ghosts */
+
+.ghost{
+
+position:absolute;
+
+animation:float 4s infinite ease-in-out;
+
+}
+
+.ghost1{
+
+top:8%;
+left:8%;
+
+}
+
+.ghost2{
+
+top:12%;
+right:10%;
+
+animation-delay:2s;
+
+}
+
+/* Monsters */
+
+.monster{
+
+position:absolute;
+
+font-size:70px;
+
+animation:float 5s infinite ease-in-out;
+
+}
+
+.monster1{
+
+bottom:40px;
+left:50px;
+
+}
+.monster2{
+
+top:40px;
+left:50px;
+
+}
+.monster3{
+
+bottom:40px;
+left:50px;
+
+}
+.monster4{
+
+top:40px;
+right:50px;
+
+}
+
+.monster5{
+
+top:65%;
+right:30px;
+
+}
+
+.monster6{
+
+bottom:60px;
+right:170px;
+
+}
+
+/* Floating Animation */
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+}
+
+/* Stars */
+
+.star{
+
+position:absolute;
+
+width:8px;
+
+height:8px;
+
+background:cyan;
+
+border-radius:50%;
+
+box-shadow:
+
+0 0 15px cyan,
+
+0 0 30px cyan;
+
+animation:twinkle 2s infinite;
+
+}
+
+.s1{
+
+top:15%;
+left:20%;
+
+}
+
+.s2{
+
+top:30%;
+left:80%;
+
+}
+
+.s3{
+
+top:70%;
+left:25%;
+
+}
+
+.s4{
+
+top:80%;
+left:65%;
+
+}
+
+.s5{
+
+top:40%;
+left:55%;
+
+}
+
+.s6{
+
+top:55%;
+left:10%;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+
+transform:scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(1.5);
+
+}
+
+}
+</style>
+
+</head>
+
+<body>
+    <div class="ghost ghost1">
+<img src="https://media.tenor.com/zx6C6Q6i8mQAAAAi/ghost.gif" width="80">
+</div>
+
+<div class="ghost ghost2">
+<img src="https://media.tenor.com/zx6C6Q6i8mQAAAAi/ghost.gif" width="70">
+</div>
+
+<div class="monster monster1">👹
+</div>
+<div class="monster monster2">👹
+</div>
+<div class="monster monster3">👹
+</div>
+<div class="monster monster4">🐉
+</div>
+<div class="monster monster5">🐉
+</div>
+
+<div class="monster monster6">🐉
+</div>
+<div class="star s1"></div>
+<div class="star s2"></div>
+<div class="star s3"></div>
+<div class="star s4"></div>
+<div class="star s5"></div>
+<div class="star s6"></div>
+
+<div class="login">
+
+<h1>🎮 CampusX</h1>
+
+<p>Level Up Your Campus Life 🚀</p>
+
+<input type="email" id="email" placeholder="College Email">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<div class="links">
+
+<p><a href="#">Forgot Password?</a></p>
+
+<p>New User? <a href="#">Register</a></p>
+
+</div>
+
+</div>
+
+<script>
+
+function login(){
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    if(email === "" || password === ""){
+        alert("Please fill all the fields!");
+        return;
+    }
+
+    const btn = document.querySelector("button");
+    btn.innerHTML = "Loading...";
+    btn.disabled = true;
+
+    setTimeout(function(){
+
+        window.location.href = "index.html";
+
+    },1500);
+
+}
+
+</script>
+
+</body>
+</html>

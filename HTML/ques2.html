@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar and Footer</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Navbar */
+.navbar{
+    width:100%;
+    height:80px;
+    background-color:#C2185B;
+    color:white;
+    text-align:center;
+    line-height:80px;
+    font-size:28px;
+    font-weight:bold;
+    border:2px solid black;
+}
+
+/* Middle Section */
+.container{
+    flex:1;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+/* Common Box Style */
+.box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    border:2px solid white;
+}
+
+/* Individual Colors */
+.box1{
+    background-color:#FCE4EC;
+}
+
+.box2{
+    background-color:#F8BBD0;
+}
+
+.box3{
+    background-color:#F3E5F5;
+}
+
+.box4{
+    background-color:#E1BEE7;
+}
+
+/* Footer */
+.footer{
+    width:100%;
+    height:80px;
+    background-color:#C2185B;
+    color:white;
+    text-align:center;
+    line-height:80px;
+    font-size:28px;
+    font-weight:bold;
+    border:2px solid black;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <i>Navbar</i>
+</div>
+
+<div class="container">
+
+    <div class="box box1"><i>Box 1</i></div>
+
+    <div class="box box2"><i>Box 2</i></div>
+
+    <div class="box box3"><i>Box 3</i></div>
+
+    <div class="box box4"><i>Box 4</i></div>
+
+</div>
+
+<div class="footer">
+    <i>Footer</i>
+</div>
+
+</body>
+</html>

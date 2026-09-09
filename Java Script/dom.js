@@ -1,0 +1,17 @@
+const newSection2=document.createElement(section);
+newSection2.id="b";
+newSection2.textContent="Section2";
+newSection2.classList.add("box");
+newSection2.classList.add("bg1");
+newSection2.classList.add("box","bg1");
+document.body.append(newSection2);
+newSection2.style.color="white";
+newSection2.textContent+="😊";
+document.body.prepend(newSection2);
+const newSection3=document.createElement("Section");
+newSection3.id="C";
+newSection3.classList.add("box","bg1");
+newSection3.style.width="25rem";
+newSection3.textContent="Section3";
+// newSection3.classList.remove("bg1");
+document.body.append(newSection3);

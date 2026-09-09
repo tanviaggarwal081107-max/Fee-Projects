@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    body{
+        min-height:100dvh;
+        background-color:#be76df;
+        font-family: cursive;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    section{
+        background-color: rgb(232, 229, 226);
+        width:20rem;
+        padding:1rem;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        font-size: 1.2rem;
+        display:flex;
+        justify-content: center;
+
+    }
+    input{
+        height:40px;
+        padding:2px 10px;
+        font-size:1.1rem;
+        width:100%;
+        outline:none;
+        border:none;
+        border-radius: 8px;
+        background-color: rgba(255, 0, 153, 0.1);
+
+    }
+    button{
+ background:dodgerblue;
+ color:white;
+ margin-bottom:20px;
+ font-size:1,5rem;
+ width:100%;
+ padding:5px;
+ border-radius: 8px;
+ border:none;
+ transition: all 0.3s ease;
+
+    }
+    button:hover{
+        cursor:pointer;
+        background-color: seagreen;
+    }
+    button:active{
+         transform:scale(0.97);
+    }
+    </style>
+    
+</head>
+<body>
+    <section>
+        <main>
+            <form action="#" method="get">
+                <h2 style="text-align:center">Login</h2>
+                <br />
+                <label for="email">Email</label><br />
+                <input type="text"
+                id="email"
+                name="email"
+                placeholder="enter your email"
+                minlength="3"
+                maxlength="8"
+                required />
+                <br /><br>
+                <label for="password">Password</label><br />
+                <input type="password"
+                id="password"
+                name="password"
+                placeholder="enter your password"
+                minlength="3"
+                maxlength="8"
+                required />
+                <br /><br />
+                <button type="Submit">Submit</button>
+
+            </form>
+        </main>
+    </section>
+    
+</body>
+</html>

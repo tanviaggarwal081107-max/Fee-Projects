@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: seagreen;
+    background: radial-gradient(skyblue,midnightblue);
+    color:white;
+    font-family:"courgette",Inter,Poppins,sans-serif;
+}

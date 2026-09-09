@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f5f1e8;
+        }
+
+        /* Header */
+
+        header {
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 2rem;
+            font-weight: bold;
+
+            color: #f5c542;
+            background-color: #1c1c1c;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Main */
+
+        main {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 30px;
+
+            padding: 40px;
+        }
+
+        /* Form */
+
+        form {
+            width: 380px;
+
+            padding: 2rem !important;
+
+            background-color: #fffdf7;
+
+            border-radius: 15px;
+
+            border: 2px solid #d4af37;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            color: #b8860b;
+            font-size: 1.7rem;
+        }
+
+        /* Labels */
+
+        label {
+            display: block;
+
+            margin-bottom: 15px;
+
+            color: #333333;
+
+            font-weight: bold;
+        }
+
+        /* Input */
+
+        input {
+            display: block;
+
+            width: 100%;
+
+            margin-top: 7px;
+
+            padding: 10px 12px;
+
+            height: 2.5rem;
+
+            border: 2px solid #d6d3ca;
+
+            border-radius: 7px;
+
+            outline: none;
+
+            font-size: 1rem;
+
+            background-color: #ffffff;
+
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #d4af37;
+
+            box-shadow: 0 0 8px rgba(212, 175, 55, 0.35);
+        }
+
+        /* Button */
+
+        button {
+            width: 100%;
+
+            padding: 11px;
+
+            margin-top: 10px;
+
+            border: none;
+
+            border-radius: 7px;
+
+            background-color: #1c1c1c;
+
+            color: #f5c542;
+
+            font-size: 1rem;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #d4af37;
+
+            color: #1c1c1c;
+
+            transform: translateY(-2px);
+        }
+
+        /* Display */
+
+        #display {
+            width: 380px;
+
+            min-height: 150px;
+
+            padding: 25px;
+
+            background-color: #fffdf7;
+
+            border-radius: 15px;
+
+            border: 2px solid #d4af37;
+
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+            color: #333333;
+
+            font-size: 1.1rem;
+
+            line-height: 1.8;
+
+            white-space: pre-line;
+        }
+
+        /* Footer */
+
+        footer {
+            height: 15vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: #f5c542;
+
+            font-size: 1.2rem;
+
+            background-color: #1c1c1c;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 800px) {
+
+            main {
+                flex-direction: column;
+            }
+
+            form,
+            #display {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header class="fcx bg1">
+        🎓 Student Registration
+    </header>
+
+
+    <!-- Main -->
+
+    <main class="fcy">
+
+        <!-- Form -->
+
+        <form id="form1" class="card w" style="padding:2rem">
+
+            <h3 style="text-align:center; margin-bottom:1.5rem;">
+                ✨ My Details
+            </h3>
+
+
+            <!-- Section -->
+
+            <label>
+                Section
+
+                <input
+                    type="text"
+                    name="section"
+                    id="section"
+                    placeholder="Enter Section"
+                >
+
+            </label>
+
+
+            <!-- Roll Number -->
+
+            <label>
+                Roll Number
+
+                <input
+                    type="text"
+                    name="username"
+                    id="rollnumber"
+                    placeholder="Enter Roll Number"
+                >
+
+            </label>
+
+
+            <!-- Name -->
+
+            <label>
+                Name
+
+                <input
+                    type="text"
+                    name="studentname"
+                    id="studentName"
+                    placeholder="Enter Name"
+                >
+
+            </label>
+
+
+            <!-- Submit -->
+
+            <button type="submit">
+                Submit Details
+            </button>
+
+        </form>
+
+
+        <!-- Display -->
+
+        <div id="display">
+
+            <h3 style="text-align:center;">
+                📋 Student Details
+            </h3>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="fcx bg1">
+        Made with ❤️ using HTML, CSS & JavaScript
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        let form1 = document.querySelector("#form1");
+
+        let section = document.querySelector("#section");
+
+        let rollnumber = document.querySelector("#rollnumber");
+
+        let studentName = document.querySelector("#studentName");
+
+        let display = document.querySelector("#display");
+
+
+        form1.addEventListener("submit", cbf);
+
+
+        function cbf(e) {
+
+            e.preventDefault();
+
+
+            if (
+                studentName.value.trim() === "" ||
+                rollnumber.value.trim() === "" ||
+                section.value.trim() === ""
+            ) {
+
+                alert("Please provide complete details");
+
+            }
+
+            else {
+
+                display.textContent =
+                    `Student Details:
+
+Section: ${section.value}
+Roll Number: ${rollnumber.value}
+Name: ${studentName.value}`;
+
+
+                localStorage.setItem(
+                    "section",
+                    section.value
+                );
+
+
+                localStorage.setItem(
+                    "rollnumber",
+                    rollnumber.value
+                );
+
+
+                localStorage.setItem(
+                    "studentName",
+                    studentName.value
+                );
+
+
+                form1.reset();
+
+            }
+
+        }
+
+
+        section.addEventListener("focus", cbf2);
+
+
+        function cbf2() {
+
+            display.textContent = "";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
