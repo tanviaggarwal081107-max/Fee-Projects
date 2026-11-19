@@ -1,0 +1,21 @@
+1. UI (User Interface)
+
+UI is everything we actually see and interact with on a screen. It includes colors, fonts, buttons, and layouts.
+A great UI looks beautiful and makes it obvious where to click next. 
+
+One Liner : How the app looks.
+
+2. UX (User Experience)
+
+UX is all about how a user feels while using our app. It focus on smooth navigation, easy flows without any frustration.
+Good UX makes the app feel completely natural. It is very important to attract users to use our app.
+
+One liner : How the app feels.
+
+3. Global State
+
+Global state is a central place to store data that many components need. Instead of passing data down through every level, 
+any component can just grab what it needs directly. It prevents prop drilling. 
+Example : Theme (dark and light).
+
+One liner : Shared app data storage.
