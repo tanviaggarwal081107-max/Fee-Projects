@@ -1,0 +1,22 @@
+important topic for me:
+
+JavaScript is the brain of the web it runs in the browser turning static pages into interactive experiences
+and it manages logic,events,DOM manipulation.
+And remember that React or any framework is just pure javascript.
+
+Summary:
+The brain of the web that makes websites interactive.
+
+Another 2 important topics:
+
+1. React
+React is a javascript library that helps us build user interfaces quickly and it use 
+virtual dom which makes it fast. It only updates what actually changes making your web apps fast and smooth 
+
+Keywords: Build fast user interfaces.
+
+2. Components
+They are small reusable pieces of a website like a button or a navbar, build them once 
+and reuse them anywhere it saves time and keep your code organized.
+
+Keywords: Reusable UI building blocks.
